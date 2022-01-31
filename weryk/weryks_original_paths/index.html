@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title>Marcin's Demo Page</title>
+</head>
+<body>
+ 
+<!--TOP NAVIGATION-->
+  <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand font-weight-bold" href="#">WerykOnline</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/login_attempts/">Login attempts</a>
+              <a class="dropdown-item" href="/encrypt/">Cryptography</a>
+              <a class="dropdown-item" href="/lotto/">Random</a>
+              <a class="dropdown-item" href="/login/">Login page</a>
+              <a class="dropdown-item" href="/wordcount/">Word Count</a>
+              <a class="dropdown-item" href="/interactive/">Interactive (JQuery)</a>
+              <a class="dropdown-item" href="/graphing/">Graph</a>
+              <a class="dropdown-item" href="/football/">Football</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- MAIN -->  
+<main>
+  <!--JUMBOTRON-->
+  <div class="jumbotron shadow">
+    <h1 class="display-4">This website is under construction.</h1>
+    <hr class="my-4">
+    <p class="lead">Even if it is not completed feel free to look around.</p>
+    <p class="lead font-weight-bold">Check Projects</p>
+  </div>
+
+  <!--C A R D S-->
+  <div class="container">
+    <div class="card-deck">
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Login attempts</h5>
+          <hr class="my-0">
+          <p class="card-text">Currently this page is showing unsuccessful login attempts to this server. Top 10 from
+            the over 2000 that are in the database.
+
+            The table currently showing the time and date plus username that was used to gain access to this server.
+
+            Highly possible that random scripts from all over the world scanning the IP address and trying to use
+            dictionary attack to get access to the server.</p>
+          <a href="/login_attempts/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Encryption</h5>
+          <hr class="my-0">
+          <p class="card-text">This function is presenting simple concept of cryptography.
+
+            In cryptography encryption is a process of encoding the message in a way that only authorized people can
+            view the content of the message.
+
+            In this case the message(string) is encrypted using the key which is password.</p>
+          <a href="/encrypt/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-deck">
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Simple Lotto simulator</h5>
+          <hr class="my-0">
+          <p class="card-text">This function is simply representing how the random function works.
+
+            System is randomly x times generating list fo numbers between 1 and 59.
+
+            Then the numbers are compared against user numbers.</p>
+          <a href="/lotto/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Login page</h5>
+          <hr class="my-0">
+          <p class="card-text">Test credentials: admin/admin</p>
+          <a href="/login/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-deck">
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Word count</h5>
+          <hr class="my-0">
+          <p class="card-text">Just a small example of website word count using tutorial from here: Flask by Example –
+            Text Processing with Requests, BeautifulSoup, and NLTK
+          </p>
+          <a href="/wordcount/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Interactive (jQuery)</h5>
+          <hr class="my-0">
+          <p class="card-text">Which is the best programming language of them all?</p>
+          <a href="/interactive/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-deck">
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Graph</h5>
+          <hr class="my-0">
+          <p class="card-text">Collness of programming languages over time</p>
+          <a href="/graphing/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+          <h5 class="card-title">Football predictor</h5>
+          <hr class="my-0">
+          <p class="card-text">Machine Learning model to predict football results</p>
+          <a href="/football/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--FOOTER-->
+<footer class="footer">
+        <div class="container sticky-bottom text-center text-monospace">
+          <span>Marcin Weryk 2019</span>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
